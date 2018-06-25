@@ -10,5 +10,6 @@ namespace BMI_Pratice
     {
         Man,
         Woman
+
     }
 }
