@@ -81,9 +81,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(75, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.Size = new System.Drawing.Size(46, 12);
             this.label1.TabIndex = 5;
-            this.label1.Text = "身高";
+            this.label1.Text = "身高(m)";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -91,9 +91,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(75, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
+            this.label2.Size = new System.Drawing.Size(49, 12);
             this.label2.TabIndex = 6;
-            this.label2.Text = "體重";
+            this.label2.Text = "體重(kg)";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3

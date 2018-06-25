@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BMI_Pratice.Type;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +20,33 @@ namespace BMI_Pratice
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string HighText = textBox1.Text;
+            string WeightText = textBox2.Text;
+            int High;
+            int Weight;
+            Gender gender = Gender.Man;
+            if (!GetAndCheckNumber(HighText, out High))
+            {
+                MessageBox.Show("請輸入身高數字");
+            }
+            if (!GetAndCheckNumber(WeightText, out Weight))
+            {
+                MessageBox.Show("請輸入體重數字");
+            }
+            if (radioButton2.Checked)
+            {
+                gender = Gender.Woman;
+            }
+            Person PersonData = new Person(High, Weight, gender);
+            string Message = PersonData.GetAlertMessageForBMI();
+            textBox3.Text = Message;
+            textBox4.Text = PersonData.PersonBMI.ToString();
         }
-
+        private bool GetAndCheckNumber(string NumberText,out int Number)
+        {
+            bool IsNumber = int.TryParse(NumberText, out Number);
+            return IsNumber;
+        }
         private void label5_Click(object sender, EventArgs e)
         {
 
@@ -34,12 +59,12 @@ namespace BMI_Pratice
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-
+            radioButton1.Checked = false;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
+            radioButton2.Checked = false;
         }
 
         private void label3_Click(object sender, EventArgs e)
