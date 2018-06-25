@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BMI_Pratice.Helper;
+using BMI_Pratice.Type;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,14 +23,12 @@ namespace BMI_Pratice
             PersonHigh = _personHight;
             PersonWeight = _personWeight;
             PersonGende = _personGende;
-            PersonBMI = BMI.GetBMI(PersonHigh, PersonWeight);
+            PersonBMI = BMIHelper.GetBMI(PersonHigh, PersonWeight);
         }
 
-        public bool GetAlertMessageForBMI()
+        public string GetAlertMessageForBMI()
         {
-
-            PersonBMI.CompareTo(20);
-            return true;
+            return "";
         }
     }
 }

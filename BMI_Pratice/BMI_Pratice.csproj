@@ -45,17 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BMI.cs" />
+    <Compile Include="Helper\BMIHelper.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gender.cs" />
-    <Compile Include="IPersonBMIStandard.cs" />
-    <Compile Include="ManBMIStandard.cs" />
-    <Compile Include="MessaeType.cs" />
+    <Compile Include="PersonStandard\WomanBMIStandard.cs" />
+    <Compile Include="Type\Gender.cs" />
+    <Compile Include="PersonStandard\IPersonBMIStandard.cs" />
+    <Compile Include="PersonStandard\ManBMIStandard.cs" />
+    <Compile Include="Type\MessaeType.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

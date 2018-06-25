@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BMI_Pratice
+namespace BMI_Pratice.Helper
 {
-    public static class BMI
+    public static class BMIHelper
     {
         public static float GetBMI(int High,int Weiget)
         {
