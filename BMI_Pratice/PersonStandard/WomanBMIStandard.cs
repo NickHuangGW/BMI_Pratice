@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BMI_Pratice.Type;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

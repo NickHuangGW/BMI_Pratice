@@ -1,4 +1,5 @@
 ﻿using BMI_Pratice.Helper;
+using BMI_Pratice.PersonStandard;
 using BMI_Pratice.Type;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,8 @@ namespace BMI_Pratice
 
         public float PersonBMI { get; private set; }
 
+        private IPersonBMIStandard PersonBMIStandard { get; set; }
+
         public Person(int _personHight, int _personWeight, Gender _personGende)
         {
             PersonHigh = _personHight;
@@ -28,7 +31,19 @@ namespace BMI_Pratice
 
         public string GetAlertMessageForBMI()
         {
-            return "";
+            GetPersonBMIStandardInjection();
+            return PersonBMIStandard.BMIstandard(PersonBMI);
+        }
+        private void GetPersonBMIStandardInjection()
+        {
+            if (PersonGende.Equals(Gender.Man))
+            {
+                PersonBMIStandard = new ManBMIStandard();
+            }
+            else if (PersonGende.Equals(Gender.Woman))
+            {
+                PersonBMIStandard = new WomanBMIStandard();
+            }
         }
     }
 }
