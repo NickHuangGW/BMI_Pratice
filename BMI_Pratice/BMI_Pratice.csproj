@@ -52,6 +52,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PersonStandard\BMICondition.cs" />
+    <Compile Include="PersonStandard\PersonBMIStandardBase.cs" />
     <Compile Include="PersonStandard\WomanBMIStandard.cs" />
     <Compile Include="Factory\GenderFactory.cs" />
     <Compile Include="PersonStandard\IPersonBMIStandard.cs" />

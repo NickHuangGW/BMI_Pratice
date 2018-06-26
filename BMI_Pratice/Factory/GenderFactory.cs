@@ -15,14 +15,14 @@ namespace BMI_Pratice.Factory
             Woman
 
         }
-        public static IPersonBMIStandard GetPersonBMIStandard(Gender _personGender)
+        public static IPersonBMIStandard GetPersonBMIStandard(Gender _personGender, float _personBMI)
         {
             switch (_personGender)
             {
                 case Gender.Man:
-                    return new ManBMIStandard();
+                    return new ManBMIStandard(_personBMI);
                 case Gender.Woman:
-                    return new WomanBMIStandard();
+                    return new WomanBMIStandard(_personBMI);
                 default:
                     return null;
             }

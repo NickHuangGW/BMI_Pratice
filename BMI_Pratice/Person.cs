@@ -31,7 +31,7 @@ namespace BMI_Pratice
 
         public string GetAlertMessageForBMI()
         {
-            IPersonBMIStandard PersonBMIStandard = GetPersonBMIStandard(PersonGende);
+            IPersonBMIStandard PersonBMIStandard = GetPersonBMIStandard(PersonGende, PersonBMI);
             return PersonBMIStandard.BMIstandard(PersonBMI);
         }
 
