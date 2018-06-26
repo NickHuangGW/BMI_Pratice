@@ -53,7 +53,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="PersonStandard\WomanBMIStandard.cs" />
-    <Compile Include="Type\Gender.cs" />
+    <Compile Include="Factory\GenderFactory.cs" />
     <Compile Include="PersonStandard\IPersonBMIStandard.cs" />
     <Compile Include="PersonStandard\ManBMIStandard.cs" />
     <Compile Include="Type\MessaeType.cs" />
