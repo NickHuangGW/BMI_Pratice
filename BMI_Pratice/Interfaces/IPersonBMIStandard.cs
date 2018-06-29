@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BMI_Pratice.PersonStandard
+namespace BMI_Pratice.Interfaces
 {
     public interface IPersonBMIStandard
     {

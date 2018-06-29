@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BMI_Pratice.Helper
+﻿namespace BMI_Pratice.Helper
 {
     public static class BMIHelper
     {

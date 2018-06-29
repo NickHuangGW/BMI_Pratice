@@ -52,14 +52,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Person.cs" />
     <Compile Include="PersonStandard\BMICondition.cs" />
     <Compile Include="PersonStandard\PersonBMIStandardBase.cs" />
     <Compile Include="PersonStandard\WomanBMIStandard.cs" />
     <Compile Include="Factory\GenderFactory.cs" />
-    <Compile Include="PersonStandard\IPersonBMIStandard.cs" />
+    <Compile Include="Interfaces\IPersonBMIStandard.cs" />
     <Compile Include="PersonStandard\ManBMIStandard.cs" />
     <Compile Include="Type\MessaeType.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="HealthExamination.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

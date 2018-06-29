@@ -1,4 +1,5 @@
-﻿using BMI_Pratice.Type;
+﻿using BMI_Pratice.Models;
+using BMI_Pratice.Type;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,10 +39,16 @@ namespace BMI_Pratice
             {
                 gender = Gender.Woman;
             }
-            Person PersonData = new Person(High, Weight, gender);
-            string Message = PersonData.GetAlertMessageForBMI();
-            textBox3.Text = Message;
-            textBox4.Text = PersonData.PersonBMI.ToString();
+            Person PersonData = new Person
+            {
+                PersonGende = gender,
+                PersonHigh = High,
+                PersonWeight = Weight
+            };
+            HealthExamination Examination = new HealthExamination(PersonData);
+            Examination.GetMessageAndBMI();
+            textBox3.Text = Examination.Message;
+            textBox4.Text = Examination.PersonBMI.ToString();
         }
         private bool GetAndCheckNumber(string NumberText,out int Number)
         {

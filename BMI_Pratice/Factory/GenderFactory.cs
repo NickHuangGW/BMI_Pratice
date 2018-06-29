@@ -1,4 +1,5 @@
-﻿using BMI_Pratice.PersonStandard;
+﻿using BMI_Pratice.Interfaces;
+using BMI_Pratice.PersonStandard;
 using System;
 using System.Collections.Generic;
 using System.Linq;

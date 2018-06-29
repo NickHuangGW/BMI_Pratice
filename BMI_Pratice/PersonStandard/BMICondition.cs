@@ -1,11 +1,4 @@
-﻿using BMI_Pratice.Type;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BMI_Pratice.PersonStandard
+﻿namespace BMI_Pratice.PersonStandard
 {
     public class BMICondition
     {
